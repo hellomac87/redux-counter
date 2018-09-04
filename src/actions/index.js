@@ -5,14 +5,14 @@ action 객체를 만드는 액션 생성 함수들을 선언한다(action creato
 
 import * as types from './ActionTypes';
 
-export const create = (color) => {
+export const create = (color) => ({
     type : types.CREATE,
     color
-}
+});
 
-export const remove = () => {
+export const remove = () => ({
     type : types.REMOVE
-}
+});
 
 export const increment = (index) => ({
      type: types.INCREMENT,
